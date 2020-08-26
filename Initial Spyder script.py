@@ -48,8 +48,8 @@ def get_models():
     
     return models
 
-input_data = pd.read_csv("train.csv").drop('Id', axis = 1)
-test_data = pd.read_csv("test.csv").drop('Id', axis = 1)
+input_data = pd.read_csv(r".\Data\train.csv").drop('Id', axis = 1)
+test_data = pd.read_csv(r".\Data\test.csv").drop('Id', axis = 1)
 
 
 features = input_data.iloc[:, :-1]
